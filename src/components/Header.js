@@ -46,7 +46,7 @@ export const ThemeToggle = () => {
   )
 }
 
-const Navbar = ({ input, searchTerm, handleChange, handleSubmit }) => {
+const Navbar = ({ input, handleChange, handleSubmit }) => {
   const [scrollPosition, setScrollPosition] = useState(0)
 
   const handleScroll = () => {
@@ -95,8 +95,6 @@ const Navbar = ({ input, searchTerm, handleChange, handleSubmit }) => {
           </form>
         </Box>
 
-        <Box ml={4}>{JSON.stringify(input)}</Box>
-        <Box>{JSON.stringify(searchTerm)}</Box>
         <Spacer />
 
         {/* tablet and full size */}
